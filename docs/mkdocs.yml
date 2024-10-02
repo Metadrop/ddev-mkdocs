@@ -1,6 +1,65 @@
 #ddev-generated
 site_name: Mkdocs site
-theme: material
 dev_addr: '0.0.0.0:8000'
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn
+# More theme options: https://squidfunk.github.io/mkdocs-material/setup/
+theme:
+  name: material
+  palette:
+    primary: purple
 nav:
   - Home: index.md
+#   - Architecture:
+#       - Content types:
+#           - Home: architecture/content-types/content-types.md
+#           - Article: architecture/content-types/article.md
+#   - Infrastructure:
+#       - Local: infrastructure/local.md
+#       - Environments: infrastructure/environments.md
+#       - Solr: infrastructure/solr.md
+#   - Features:
+#       - Search: features/search.md
+#       - API: features/api.md
+#   - Procedures:
+#       - Updates: procedures/updates.md
+#       - Deployment: procedures/deployment.md
+#   - Others:
+#       - Glossary: others/glossary.md
+#       - FAQ: others/faq.md
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite:
+      linenums: true
+  - meta
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tilde
+  - md_in_html
+  - tables
+  - toc:
+      permalink: "#"
+      baselevel: 1
