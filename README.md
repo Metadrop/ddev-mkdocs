@@ -18,7 +18,13 @@ This addon just provides the basics to view mkdocs static site from docs/ folder
 
 ## Getting started
 
-Install this addon with
+For DDEV v1.23.5 or above run
+
+```shell
+ddev add-on get Metadrop/ddev-mkdocs
+```
+
+For earlier versions of DDEV run
 
 ```shell
 ddev get Metadrop/ddev-mkdocs
