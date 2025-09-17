@@ -1,54 +1,53 @@
 #ddev-generated
 site_name: Mkdocs site
-dev_addr: '0.0.0.0:8000'
-validation:
-  nav:
-    omitted_files: warn
-    not_found: warn
-    absolute_links: warn
-  links:
-    not_found: warn
-    anchors: warn
-    absolute_links: warn
-    unrecognized_links: warn
-# More theme options: https://squidfunk.github.io/mkdocs-material/setup/
 theme:
   name: material
   palette:
-    primary: purple
-nav:
-  - Home: index.md
-#   - Architecture:
-#       - Content types:
-#           - Home: architecture/content-types/content-types.md
-#           - Article: architecture/content-types/article.md
-#   - Infrastructure:
-#       - Local: infrastructure/local.md
-#       - Environments: infrastructure/environments.md
-#       - Solr: infrastructure/solr.md
-#   - Features:
-#       - Search: features/search.md
-#       - API: features/api.md
-#   - Procedures:
-#       - Updates: procedures/updates.md
-#       - Deployment: procedures/deployment.md
-#   - Others:
-#       - Glossary: others/glossary.md
-#       - FAQ: others/faq.md
+    # See https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+    primary: indigo
+    scheme: default
+    accent: deep purple
+  features:
+    - content.code.copy
+    - content.code.select
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.tracking
+    - navigation.top
+    - navigation.edit
+    - content.tooltips
+    - content.code.copy
+
+dev_addr: '0.0.0.0:8000'
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - codehilite:
       linenums: true
-  - meta
-  - pymdownx.caret
+  - def_list
+  - footnotes
+  - md_in_html
   - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
+  - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+      extend_pygments_lang:
+        - name: php
+          lang: php
+          options:
+            startinline: true
+  - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
@@ -57,9 +56,13 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.tilde
-  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - tables
   - toc:
       permalink: "#"
       baselevel: 1
+
+nav:
+  - Home: index.md
+  - About: about.md
