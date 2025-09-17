@@ -65,4 +65,20 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - About: about.md
+#   - Architecture:
+#     - Content types:
+#       - Home: architecture/content-types/content-types.md
+#       - Article: architecture/content-types/article.md
+#   - Infrastructure:
+#     - Local: infrastructure/local.md
+#     - Environments: infrastructure/environments.md
+#     - Solr: infrastructure/solr.md
+#   - Features:
+#     - Search: features/search.md
+#     - API: features/api.md
+#   - Procedures:
+#     - Updates: procedures/updates.md
+#     - Deployment: procedures/deployment.md
+#   - Others:
+#     - Glossary: others/glossary.md
+#     - FAQ: others/faq.md
