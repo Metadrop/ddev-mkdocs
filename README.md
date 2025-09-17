@@ -34,9 +34,9 @@ ddev restart
 
 ### Configuration
 
-By default, mkdocs addon show docs from /docs folder inside yout project. This can be updated in docker-compose.mkdocs.yaml as needed.
+By default, mkdocs addon show docs from /docs folder inside your project. This can be updated in docker-compose.mkdocs.yaml as needed.
 
-Also this addon uses ports 9004 and 9005 to view documentation, this can be updated in docker-compose.mkdocs.yaml too. 
+Also this addon uses ports 9004 and 9005 to view documentation, this can be updated in docker-compose.mkdocs.yaml too.
 
 ### Write your own documentation
 
@@ -44,4 +44,4 @@ To start building your docs you can read the [Mkdocs getting started guide](http
 
 ### View the documentation
 
-Mkdocs documentation can be accesed in https://${PROJECT_NAME}.ddev.site:9005
+MkDocs documentation can be accessed in https://${PROJECT_NAME}.ddev.site:9005
