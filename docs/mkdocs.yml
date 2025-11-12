@@ -1,5 +1,5 @@
 #ddev-generated
-site_name: Mkdocs site
+site_name: MkDocs site
 theme:
   name: material
   palette:
