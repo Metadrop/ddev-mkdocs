@@ -9,6 +9,5 @@ post_install_actions:
   - test -d ${DDEV_APPROOT}/docs || mkdir -p ${DDEV_APPROOT}/docs
   - test -d ${DDEV_APPROOT}/docs/docs || mkdir -p ${DDEV_APPROOT}/docs/docs
   - test -f ${DDEV_APPROOT}/docs/mkdocs.yml || cp docs/mkdocs.yml ${DDEV_APPROOT}/docs/mkdocs.yml
-  - test -f ${DDEV_APPROOT}/docs/docs/index.md || echo "## Welcome to Mkdocs" > ${DDEV_APPROOT}/docs/docs/index.md
+  - test -f ${DDEV_APPROOT}/docs/docs/index.md || echo "## Welcome to MkDocs" > ${DDEV_APPROOT}/docs/docs/index.md
   - echo "Mkdocs install finished. Please restart ddev with 'ddev restart'"
- 
