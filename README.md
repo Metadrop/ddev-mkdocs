@@ -12,6 +12,8 @@
 
 This repository provides a [DDEV](https://ddev.readthedocs.io) add-on for the [mkdocs](https://www.mkdocs.org/) service, based on [Metadrop MkDocs Docker image](https://github.com/Metadrop/docker-mkdocs).
 
+It is part of the [DDEV Aljibe](https://github.com/Metadrop/ddev-aljibe) ecosystem, but it can used separately with any DDEV project.
+
 It includes [MkDocs Material theme](https://squidfunk.github.io/mkdocs-material/) pre-installed.
 
 MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation. Documentation source files are written in Markdown, and configured with a single YAML configuration file.
