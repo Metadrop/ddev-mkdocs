@@ -46,7 +46,7 @@ check_build_mkdocs() {
   echo "# ddev get ${DIR} with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
   ddev get ${DIR}
   echo "Installed add-on from directory, restarting ddev" >&3
-  ddev restart
+  ddev restart -y
   echo "Testing mkdocs" >&3
 
   health_checks
